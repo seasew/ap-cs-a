@@ -1,0 +1,5 @@
+(define safe-divider (lambda (numerator)
+                         (lambda (denominator)
+                           (if (= denominator 0)
+                               (display "cow")
+                               (/ numerator denominator)))))
