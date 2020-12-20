@@ -1,3 +1,5 @@
+; the mobile problem
+
 (define (make-mobile left right)
   (list left right)) ; left and right are branches
 

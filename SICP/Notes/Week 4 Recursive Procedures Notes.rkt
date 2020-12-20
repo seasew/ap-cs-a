@@ -26,6 +26,7 @@
 
 
 ; recursive procedure using an iterative process
+; iterative has state
 (define (count2 list)
   (define (iter wds result)
     (if (null? wds)
@@ -35,6 +36,9 @@
   (iter list 0))
 
 ;recusive procedure using a recursive process
+; recursive has no state, just adds/appends original stuff w/ newly recursed stuff
+; deferred operations
+; nested function calls
 (define (count1 list)
   (if (null? list) 0
       (count1 (cdr list)))
